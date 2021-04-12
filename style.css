@@ -1,0 +1,47 @@
+* { /* selects all elecments */
+  box-sizing: border-box;
+}
+html{
+  font-family: sans-serif;
+}
+
+body{
+  margin: 0;
+  background: white;
+}
+
+
+address{
+  position: absolute;
+  bottom: 30px;
+                   /*positions the address at bottom right*/
+  right: 100px;
+}
+
+
+article{
+    background: url("images/top-image.png") no-repeat top; /*fallback*/
+    background: url("images/top-image.png") no-repeat top, url("images/bottom-image.png") no-repeat bottom,
+    linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,0) 30%, rgba(0,0,0,0) 70%, rgba(0,0,0,.25));
+  border-top: 1px solid red;
+  border-bottom: 1px solid red;
+  width: 800px;
+  height: 1200px;
+  position: relative;
+}
+
+h1{
+  background-image: url("images/logo.png");
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  width: 125px;
+  height: 125px;
+  font-size: 20px;
+  text-align: center;
+  padding: 40px 0;
+  color: white;  /*font color*/
+  text-shadow: 1px 1px 1px black;
+  border-radius: 50%;
+  box-shadow: 5px 5px 6px black;
+}
